@@ -5,6 +5,7 @@ module.exports = {
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
+    `gatsby-plugin-favicon`,
     // {
     //   resolve: 'gatsby-source-wordpress',
     //   options: {

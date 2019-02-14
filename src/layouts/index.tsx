@@ -34,18 +34,19 @@ const Header = () => (
 )
 
 interface DefaultLayoutProps extends React.HTMLProps<HTMLDivElement> {
-  location: {
-    pathname: string
-  }
   children: any
 }
 
 class DefaultLayout extends React.PureComponent<DefaultLayoutProps, void> {
-  public render() {
+  constructor(props: DefaultLayoutProps) {
+    super(props);
+  }
+
+  render() {
     return (
       <div>
         <Helmet
-          title="Gatsby Default Starter"
+          title="Gatsby Starter"
           meta={[
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
@@ -60,7 +61,7 @@ class DefaultLayout extends React.PureComponent<DefaultLayoutProps, void> {
             paddingTop: 0,
           }}
         >
-          {this.props.children()}
+          {this.props.children}
         </div>
       </div>
     )
