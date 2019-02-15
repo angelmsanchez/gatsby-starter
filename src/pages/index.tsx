@@ -1,7 +1,7 @@
 import * as React from 'react'
 import Link from 'gatsby-link'
 
-import DefaultLayout from './../layouts';
+import Layout from './../components/Layout';
 
 interface IndexPageProps {
   data: {
@@ -15,33 +15,22 @@ interface IndexPageProps {
 
 export default class extends React.Component<IndexPageProps, {}> {
 
-  constructor(props: IndexPageProps, context: any) {
-    super(props, context)
+  constructor(props: IndexPageProps) {
+    super(props)
   }
 
-   render() {
+  render() {
     return (
-      <DefaultLayout>
+      <Layout>
         <div>
           <h1>Hi people</h1>
           <p>
-            Welcome to your new{' '}
-            <strong>{this.props.data.site.siteMetadata.title}</strong> site.
+            Welcome to your new site
           </p>
           <p>Now go build something great.</p>
           <Link to="/page-2/">Go to page 2</Link>
         </div>
-      </DefaultLayout>
+      </Layout>
     )
   }
 }
-
-export const pageQuery = graphql`
-  query IndexQuery {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`
