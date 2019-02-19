@@ -1,7 +1,21 @@
 import * as React from 'react';
+
 import Link from 'gatsby-link';
 
-class Header extends React.PureComponent<any, any> {
+interface State {
+  value: string;
+}
+class Header extends React.PureComponent<any, State> {
+
+  constructor() {
+    super({});
+    this.state = { value: 'en' };
+  }
+
+  changeLanguage = (event: any) => {
+    this.setState({ value: event.target.value });
+  };
+
   render() {
     return (
       <div
@@ -28,6 +42,10 @@ class Header extends React.PureComponent<any, any> {
               Gatsby
         </Link>
           </h1>
+          <div onClick={this.changeLanguage}>
+            <Link to="/es" style={{ color: 'white', textDecoration: 'none', }}>ES</Link>
+            <Link to="/en" style={{ color: 'white', textDecoration: 'none', }}>EN</Link>
+          </div>
         </div>
       </div>
     )

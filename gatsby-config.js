@@ -6,6 +6,14 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-typescript`,
     `gatsby-plugin-favicon`,
+    {
+      resolve: 'gatsby-plugin-i18n',
+      options: {
+        langKeyForNull: 'any',
+        langKeyDefault: 'en',
+        useLangKeyLayout: true
+      }
+    },
     // {
     //   resolve: 'gatsby-source-wordpress',
     //   options: {
