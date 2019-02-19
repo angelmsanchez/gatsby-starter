@@ -6,6 +6,7 @@ import { IntlProvider } from 'react-intl';
 import Header from './Header';
 
 import './index.css';
+import './../locales';
 
 const { Provider } = React.createContext({});
 interface Props extends React.HTMLProps<HTMLDivElement> {

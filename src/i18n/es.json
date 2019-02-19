@@ -1,6 +1,9 @@
 {
-  "welcome.title": "Hola Gente",
-  "welcome.subtitle": "Bienvenido al nuevo sitio",
+  "page2.goTo": "Volver a la pagina de inicio",
+  "page2.subtitle": "Bienvenido a la pagina 2",
+  "page2.title": "Hola desde la segunda pagina",
   "welcome.content": "Ahora vamos a construir algo genial",
-  "welcome.goTo": "Ir a la pagina 2"
+  "welcome.goTo": "Ir a la pagina 2",
+  "welcome.subtitle": "Bienvenido al nuevo sitio",
+  "welcome.title": "Hola Gente"
 }
