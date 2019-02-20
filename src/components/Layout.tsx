@@ -5,7 +5,7 @@ import { IntlProvider } from 'react-intl';
 
 import Header from './Header';
 
-import './index.css';
+import './index.scss';
 import './../locales';
 
 const { Provider } = React.createContext({});

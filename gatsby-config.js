@@ -14,6 +14,7 @@ module.exports = {
         useLangKeyLayout: true
       }
     },
+    `gatsby-plugin-sass`,
     // {
     //   resolve: 'gatsby-source-wordpress',
     //   options: {
