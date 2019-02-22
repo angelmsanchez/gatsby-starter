@@ -9,8 +9,8 @@
     "gatsby-plugin-i18n": "^1.0.1",
     "gatsby-plugin-react-helmet": "^3.0.6",
     "gatsby-plugin-typescript": "^2.0.8",
-    "react": "^16.8.2",
-    "react-dom": "^16.8.2",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3",
     "react-helmet": "^5.2.0",
     "react-intl": "^2.8.0"
   },
@@ -24,7 +24,8 @@
   "scripts": {
     "build": "gatsby build",
     "clean:public": "npm run rimraf public",
-    "develop": "gatsby develop",
+    "clean:node": "npm run rimraf node_modules",
+    "develop": "gatsby develop -o",
     "format": "prettier --parser typescript --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.ts*\"",
     "rimraf": "rimraf",
     "serve": "gatsby serve",
@@ -34,8 +35,8 @@
   },
   "devDependencies": {
     "@types/node": "^11.9.4",
-    "@types/react": "^16.8.1",
-    "@types/react-dom": "^16.8.1",
+    "@types/react": "^16.8.4",
+    "@types/react-dom": "^16.8.2",
     "@types/react-helmet": "^5.0.8",
     "@types/react-intl": "^2.3.17",
     "gatsby-plugin-favicon": "^3.1.5",
