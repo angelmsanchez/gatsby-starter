@@ -13,5 +13,5 @@ export default function Index({ language }: { language: any }) {
       <p><FormattedMessage id="welcome.content" /></p>
       <Link to={languageState}><FormattedMessage id="welcome.goTo" /></Link>
     </div>
-  )
+  );
 }

@@ -9,7 +9,7 @@ import './index.scss';
 import './../locales';
 
 const { Provider } = React.createContext({});
-interface Props extends React.HTMLProps<HTMLDivElement> {
+interface Props {
   children: any;
   language: string;
   messages: any;
@@ -44,5 +44,5 @@ export default function Layout(props: Props) {
         </div>
       </IntlProvider>
     </Provider>
-  )
+  );
 }

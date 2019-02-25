@@ -12,9 +12,21 @@ module.exports = {
         langKeyForNull: 'any',
         langKeyDefault: 'en',
         useLangKeyLayout: true
-      }
+      },
     },
     `gatsby-plugin-sass`,
+    {
+      resolve: 'gatsby-plugin-eslint',
+      options: {
+        test: /\.ts$|\.tsx$/,
+        exclude: /(node_modules|.cache|public)/,
+        stages: ['develop'],
+        options: {
+          emitWarning: true,
+          failOnError: false,
+        },
+      },
+    },
     // {
     //   resolve: 'gatsby-source-wordpress',
     //   options: {

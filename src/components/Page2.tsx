@@ -12,5 +12,5 @@ export default function Page2({ language }: { language: any }) {
       <p><FormattedMessage id="page2.subtitle" /></p>
       <Link to={languageState}><FormattedMessage id="page2.goTo" /></Link>
     </div>
-  )
+  );
 }

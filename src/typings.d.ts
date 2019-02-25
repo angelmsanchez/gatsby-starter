@@ -1,4 +1,3 @@
-declare module '*.json' {
-  const value: any;
-  export default value;
-}
+/* eslint-disable no-empty */
+declare module '*.json' { }
+/* eslint-enable  no-empty */

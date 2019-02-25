@@ -21,13 +21,13 @@ export default function Header() {
         }}
       >
         <h1 style={{ margin: 0 }}>
-          <Link to="/en" style={{ color: 'white', textDecoration: 'none', }}>Gatsby</Link>
+          <Link to="/en" style={{ color: 'white', textDecoration: 'none' }}>Gatsby</Link>
         </h1>
         <div>
           <Link activeClassName="selected" to="/es" style={{ color: 'white', textDecoration: 'none', marginRight: '10px' }}>ES</Link>
-          <Link activeClassName="selected" to="/en" style={{ color: 'white', textDecoration: 'none', }}>EN</Link>
+          <Link activeClassName="selected" to="/en" style={{ color: 'white', textDecoration: 'none' }}>EN</Link>
         </div>
       </div>
     </div>
-  )
+  );
 }
